@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS `admin_assert` (
+  `assert_id` int(10),
+  `assert_type` varchar(20),
+  `assert_data` datetime,
+  PRIMARY KEY (`assert_id`,`assert_type`)
+);
+
+INSERT INTO `9jx_admin_assert` (`assert_id`, `assert_type`, `assert_data`) VALUES
+('1', 'ciao1', '1'),
+('2', 'ciao2', '1'),
+('3', 'ciao3', '1');
+
+CREATE TABLE IF NOT EXISTS `user_action` (
+  `assert_id` int(10),
+  `assert_type` varchar(20),
+  `assert_data` datetime,
+  PRIMARY KEY (`assert_id`)
+);
+CREATE TABLE IF NOT EXISTS `user_action` (
+  `assert_id` int(10),
+  `assert_type` varchar(20),
+  `assert_data` datetime,
+  PRIMARY KEY (`assert_id`)
+);
+CREATE TABLE IF NOT EXISTS `user_update` (
+  `assert_id` int(10),
+  `assert_type` varchar(20),
+  `assert_data` datetime,
+  `assert_data2` datetime,
+  PRIMARY KEY (`assert_id`)
+);
+
+INSERT INTO `user_update` (`assert_id`, `assert_type`, `assert_data`, `assert_data2`) VALUES
+('1', 'fabio', '1', '2015-03-25 12:20:54'),
+('2', 'gambi', '2', '2015-03-25 12:20:54'),
+('3', 'zambe', '3', '2015-03-25 12:20:54');
